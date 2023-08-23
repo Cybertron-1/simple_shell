@@ -55,8 +55,8 @@ int _cd_command(information_tree *information)
 {
 	char *s, *directory, buffer[1024];
 	int changedirectory_return;
-
 	s = getcwd(buffer, 1024);
+	
 	if (!s)
 		_inserts("TODO: >>getcwd failure emsg here<<\n");
 	if (!information->argv[1])

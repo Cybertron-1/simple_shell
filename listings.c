@@ -10,7 +10,6 @@
 listings_tree *additional_endpoint(listings_tree **get_hed, const char *str, int number)
 {
 	listings_tree *new_head;
-
 	if (!get_hed)
 		return (NULL);
 	new_head = malloc(sizeof(listings_tree));
@@ -43,7 +42,6 @@ listings_tree *additional_endpoint(listings_tree **get_hed, const char *str, int
 listings_tree *additional_endpoint_end(listings_tree **get_hed, const char *str, int number)
 {
 	listings_tree *new_node, *get_nodation;
-
 	if (!get_hed)
 		return (NULL);
 
@@ -81,7 +79,6 @@ listings_tree *additional_endpoint_end(listings_tree **get_hed, const char *str,
 size_t cough_out_chasing(const listings_tree *h)
 {
 	size_t iterate = 0;
-
 	while (h)
 	{
 		_inserts(h->str ? h->str : "(nil)");
@@ -102,10 +99,8 @@ int remove_chasing_atindex(listings_tree **get_hed, unsigned int index)
 {
 	listings_tree *get_nodation, *prev_node;
 	unsigned int iterate = 0;
-
 	if (!get_hed || !*get_hed)
 		return (0);
-
 	if (!index)
 	{
 		get_nodation = *get_hed;
@@ -140,7 +135,6 @@ int remove_chasing_atindex(listings_tree **get_hed, unsigned int index)
 void allow_chasing(listings_tree **head_ptr)
 {
 	listings_tree *get_nodation, *next_node, *get_hed;
-
 	if (!head_ptr || !*head_ptr)
 		return;
 	get_hed = *head_ptr;

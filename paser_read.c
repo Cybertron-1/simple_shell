@@ -20,8 +20,8 @@ int _commandline(information_tree *information, char *get_path)
 }
 
 /**
- * _dump_characters - dul chara
- * @pathstr: the get_path 
+ * _dump_characters: dul chara
+ * @pathstr: the getpath 
  * @begin: index starting point
  * @end: sindex ending point
  * Return: pointer = *new buffer
@@ -30,6 +30,7 @@ char *_dump_characters(char *pathstr, int begin, int end)
 {
 	static char buf[1024];
 	int iterate = 0, calc = 0;
+	
 	for (calc = 0, iterate = begin; iterate < end; iterate++)
 		if (pathstr[iterate] != ':')
 			buf[calc++] = pathstr[iterate];
@@ -49,6 +50,7 @@ char *_get_path(information_tree *information, char *pathstr, char *command_line
 {
 	int iterate = 0, current_position = 0;
 	char *get_path;
+	
 	if (!pathstr)
 		return (NULL);
 	if ((_string_length(command_line) > 2) && _begins_withwhat(command_line, "./"))

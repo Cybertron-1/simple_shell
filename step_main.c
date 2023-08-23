@@ -10,7 +10,6 @@ int main(int acount, char **acountv)
 {
 	information_tree information[] = { INFORMATION_INITER };
 	int find_data = 2;
-
 	asm ("mov %1, %0\n\t"
 		"add $3, %0"
 		: "=r" (find_data)

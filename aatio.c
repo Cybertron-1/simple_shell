@@ -5,7 +5,6 @@
  *@ischaralpha: the character the user is inputing
  *Return: 1 if ischaralpha is alphabetic or 0 if not
  */
-
 int _checkalphanumeric(int ischaralpha)
 {
 	int checkalpha = (ischaralpha >= 'a' && ischaralpha <= 'z') || (ischaralpha >= 'A' && ischaralpha <= 'Z');
@@ -33,7 +32,6 @@ int _delimiterseq(char ischaralpha, char *delimitersh)
  *@sign: string to convert
  *Return: if no num in strings 0 else ..
  */
-
 int _cyber(char *sign)
 {
 	int iterate, signular= 1, binary_flag = 0, binary_out;
@@ -42,7 +40,7 @@ int _cyber(char *sign)
 	for (iterate = 0;  sign[iterate] != '\0' && binary_flag != 2; iterate++)
 	{
 		if (sign[iterate] == '-')
-			signular*= -1;
+			signular *= -1;
 
 		if (sign[iterate] >= '0' && sign[iterate] <= '9')
 		{

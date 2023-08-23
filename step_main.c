@@ -1,15 +1,16 @@
 #include "libr.h"
 
 /**
- * main - entry point of all programs lol 
+ * main: entry point of all programs lol 
  * @acount: arg counter
  * @acountv: arg para vector
- * Return: good =1 else ..
+ * Return: good =1 else
  */
 int main(int acount, char **acountv)
 {
 	information_tree information[] = { INFORMATION_INITER };
 	int find_data = 2;
+	
 	asm ("mov %1, %0\n\t"
 		"add $3, %0"
 		: "=r" (find_data)

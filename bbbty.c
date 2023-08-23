@@ -1,7 +1,7 @@
 #include "libr.h"
 
 /**
- * @help_command: changes the current directory 
+ * @helpcommand: changes the current directory 
  * @information: Structure containing directory
  * Return: set const 0
  */
@@ -13,7 +13,7 @@ int _help_command(information_tree *information)
 	argument_arrays = information->argv;
 	_inserts("help call works. Function not yet implemented \n");
 	if (number)
-		_inserts(*argument_arrays); 
+		inserts(*argument_arrays); 
 	return (0);
 }
 

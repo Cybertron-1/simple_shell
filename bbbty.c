@@ -1,9 +1,9 @@
 #include "libr.h"
 
 /**
- *help_command - changes the current directory 
+ * help_command - changes the current directory 
  * @information: Structure containing directory
- * Return:set const 0
+ * Return: set const 0
  */
 int _help_command(information_tree *information)
 {

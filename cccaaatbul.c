@@ -10,17 +10,17 @@
 int unset_alias(information_tree *information, char *str)
 {
 	char *pointer, correspond_c;
-	int return_one;
+	int _one;
 
 	pointer = _string_tcharacter(str, '=');
 	if (!pointer)
 		return (1);
 	correspond_c = *pointer;
 	*pointer = 0;
-	return_one = remove_chasing_atindex(&(information->alias),
+	_one = remove_chasing_atindex(&(information->alias),
 		starting_point_index(information->alias, starting_point(information->alias, str, -1)));
 	*pointer = correspond_c;
-	return (return_one);
+	return (_one);
 }
 
 /**

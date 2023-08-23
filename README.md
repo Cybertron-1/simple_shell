@@ -1,2 +1,2 @@
 # simple_shell
->learned a lot form here
+>learned a lot form here .

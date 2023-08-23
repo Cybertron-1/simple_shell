@@ -31,18 +31,18 @@ char *_string_copy_custom1(char *end, char *source)
 char *_string_dump(const char *stringz_fu)
 {
 	int length = 0;
-	char *return_kl;
+	char *_kl;
 
 	if (stringz_fu == NULL)
 		return (NULL);
 	while (*stringz_fu++)
 		length++;
-	return_kl = malloc(sizeof(char) * (length + 1));
-	if (!return_kl)
+	_kl = malloc(sizeof(char) * (length + 1));
+	if (!_kl)
 		return (NULL);
 	for (length++; length--;)
-		return_kl[length] = *--stringz_fu;
-	return (return_kl);
+		_kl[length] = *--stringz_fu;
+	return (_kl);
 }
 
 /**

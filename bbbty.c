@@ -3,7 +3,7 @@
 /**
  * _help_command - changes the current directory 
  * @information: Structure containing directory
- *  Return:set const 0
+ * Return:set const 0
  */
 int _help_command(information_tree *information)
 {
@@ -106,7 +106,3 @@ int _personal_history(information_tree *information)
 	output_listings(information->history);
 	return (0);
 }
-
-
-
-

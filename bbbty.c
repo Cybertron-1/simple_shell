@@ -1,7 +1,7 @@
 #include "libr.h"
 
 /**
- * _help_command - changes the current directory 
+ *help_command - changes the current directory 
  * @information: Structure containing directory
  * Return:set const 0
  */

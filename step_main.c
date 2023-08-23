@@ -15,7 +15,6 @@ int main(int acount, char **acountv)
 		"add $3, %0"
 		: "=r" (find_data)
 		: "r" (find_data));
-
 	if (acount == 2)
 	{
 		find_data = open(acountv[1], O_RDONLY);

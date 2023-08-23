@@ -1,7 +1,7 @@
 #include "libr.h"
 
 /**
- * additional_endpoint 
+ * additional_endpoint: add endpoint
  * @get_hed: address of get_hed pointer in mem
  * @str: string field for nodation
  * @number: index for history

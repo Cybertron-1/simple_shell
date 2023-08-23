@@ -9,7 +9,6 @@
 int _commandline(information_tree *information, char *get_path)
 {
 	struct stat end_;
-
 	(void)information;
 	if (!get_path || stat(get_path, &end_))
 		return (0);
@@ -31,7 +30,6 @@ char *_dump_characters(char *pathstr, int begin, int end)
 {
 	static char buf[1024];
 	int iterate = 0, calc = 0;
-
 	for (calc = 0, iterate = begin; iterate < end; iterate++)
 		if (pathstr[iterate] != ':')
 			buf[calc++] = pathstr[iterate];
@@ -51,7 +49,6 @@ char *_get_path(information_tree *information, char *pathstr, char *command_line
 {
 	int iterate = 0, current_position = 0;
 	char *get_path;
-
 	if (!pathstr)
 		return (NULL);
 	if ((_string_length(command_line) > 2) && _begins_withwhat(command_line, "./"))

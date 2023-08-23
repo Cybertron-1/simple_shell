@@ -13,7 +13,6 @@ int _commandline(information_tree *information, char *get_path)
 	(void)information;
 	if (!get_path || stat(get_path, &end_))
 		return (0);
-
 	if (end_.st_mode & S_IFREG)
 	{
 		return (1);

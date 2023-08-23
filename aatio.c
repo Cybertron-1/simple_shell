@@ -34,7 +34,7 @@ int _delimiterseq(char ischaralpha, char *delimitersh)
  */
 int _cyber(char *sign)
 {
-	int iterate, signular= 1, binary_flag = 0, binary_out;
+	int iterate, signular = 1, binary_flag = 0, binary_out;
 	unsigned int numeric_compare = 0;
 
 	for (iterate = 0;  sign[iterate] != '\0' && binary_flag != 2; iterate++)
@@ -52,7 +52,7 @@ int _cyber(char *sign)
 			binary_flag = 2;
 	}
 
-	if (signular== -1)
+	if (signular == -1)
 		binary_out = -numeric_compare;
 	else
 		binary_out = numeric_compare;
